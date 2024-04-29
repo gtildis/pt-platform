@@ -77,12 +77,14 @@ export const ImageForm = ({ initialData, courseId }: ImageFormProps) => {
 				</div>
 			) : (
 				<div className="relative aspect-video mt-2">
-					<Image
-						alt="Upload"
-						fill
-						className="object-cover rounded-md"
-						src={initialData.imageUrl}
-					/>
+					{initialData?.imageUrl && (
+						<Image
+							alt="Upload"
+							fill
+							className="object-cover rounded-md"
+							src={initialData.imageUrl}
+						/>
+					)}
 				</div>
 			)}
 			{isEditing && (
