@@ -3,10 +3,10 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import Mux from "@mux/mux-node";
 
-const { video } = new Mux(
-	process.env.MUX_TOKEN_ID!,
-	process.env.MUX_TOKEN_SECRET!
-);
+const { video } = new Mux({
+	tokenId: process.env["MUX_TOKEN_ID"], // This is the default and can be omitted
+	tokenSecret: process.env["MUX_TOKEN_SECRET"], // This is the default and can be omitted
+});
 
 export async function PATCH(
 	req: Request,
