@@ -17,7 +17,7 @@ const backgroundVariants = cva(
 			},
 			size: {
 				default: "p-2",
-				success: "p-1",
+				sm: "p-1",
 			},
 		},
 		defaultVariants: {
@@ -48,7 +48,7 @@ type BackgroundVariantsProps = VariantProps<typeof backgroundVariants>;
 
 type IconVariantsProps = VariantProps<typeof iconVariants>;
 
-interface IconBadgeProps extends BackgroundVariantsProps, IconVariantsProps {
+interface IconBadgeProps extends IconVariantsProps {
 	icon: LucideIcon;
 }
 

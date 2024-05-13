@@ -29,7 +29,7 @@ export const CourseProgress = ({
 				className={cn(
 					"font-medium mt-2 text-sky-700",
 					colorByVariant[variant || "default"],
-					sizeByVariant[size || "default"]
+					sizeByVariant["default"]
 				)}
 			>
 				{Math.round(value)}% Complete
