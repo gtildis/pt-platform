@@ -57,7 +57,7 @@ export const Actions = ({ disabled, courseId, isPublished }: ActionsProps) => {
 	};
 
 	return (
-		<div className="flex items-center gap-x-2">
+		<div className="flex items-center gap-x-2 publish-actions-container">
 			<Button
 				onClick={onClick}
 				disabled={disabled || isLoading}

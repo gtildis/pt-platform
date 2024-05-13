@@ -64,7 +64,7 @@ export const ChapterActions = ({
 	};
 
 	return (
-		<div className="flex items-center gap-x-2">
+		<div className="flex items-center gap-x-2 chapter-actions">
 			<Button
 				onClick={onClick}
 				disabled={disabled || isLoading}

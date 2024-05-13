@@ -5,10 +5,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 export const MobileSidebar = () => {
 	return (
 		<Sheet>
-			<SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition">
+			<SheetTrigger className="md:hidden pr-4 hover:opacity-75 transition mobile-sidebar">
 				<Menu />
 			</SheetTrigger>
-			<SheetContent side="left" className="p-0 bg-white">
+			<SheetContent side="left" className="p-0 ">
 				<Sidebar />
 			</SheetContent>
 		</Sheet>

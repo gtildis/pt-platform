@@ -19,11 +19,11 @@ export const NavbarRoutes = () => {
 	return (
 		<>
 			{isSearchPage && (
-				<div className="hidden md:block">
+				<div className="hidden md:block search-input-container">
 					<SearchInput />
 				</div>
 			)}
-			<div className="flex gap-x-2 ml-auto">
+			<div className="flex gap-x-2 ml-auto is-teacher-mode">
 				{isTeacherPage || isCoursePage ? (
 					<Link href="/">
 						<Button size="sm" variant="ghost">

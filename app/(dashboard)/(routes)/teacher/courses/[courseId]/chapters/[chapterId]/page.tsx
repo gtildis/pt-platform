@@ -53,7 +53,7 @@ const ChapterIdPage = async ({
 					label="This chapter is not published. It will not be visible in the course"
 				/>
 			)}
-			<div className="p-6">
+			<div className="p-6 back-to-the-course">
 				<div className="flex items-center justify-between">
 					<div className="w-full">
 						<Link

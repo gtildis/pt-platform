@@ -47,7 +47,7 @@ const CreatePage = () => {
 	};
 
 	return (
-		<div className="max-w-5xl mx-auto flex flex-col md:items-center md:justify-center h-full p-6">
+		<div className="max-w-5xl mx-auto flex flex-col md:items-center md:justify-center h-full p-6 course-creation-container">
 			<div>
 				<h1 className="text-2xl">Name your course</h1>
 			</div>
