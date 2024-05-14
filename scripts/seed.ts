@@ -6,12 +6,12 @@ async function main() {
 	try {
 		await database.category.createMany({
 			data: [
-				{ name: "Computer Science" },
-				{ name: "Fitness" },
-				{ name: "Photo" },
-				{ name: "Cinema" },
-				{ name: "Engineering" },
-				{ name: "Food" },
+				{ name: "Muscle hypertrophy" },
+				{ name: "Mobility conditioning" },
+				{ name: "Fat loss" },
+				{ name: "Hiit workout" },
+				{ name: "Cardiovascular adjustments" },
+				{ name: "Body weight exercises" },
 			],
 		});
 	} catch (error) {

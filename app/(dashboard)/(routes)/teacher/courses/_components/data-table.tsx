@@ -64,7 +64,7 @@ export function DataTable<TData, TValue>({
 					onChange={(event) =>
 						table.getColumn("title")?.setFilterValue(event.target.value)
 					}
-					className="max-w-sm"
+					className="max-w-sm bg-card"
 				/>
 				<Link href="/teacher/create">
 					<Button>
@@ -73,7 +73,7 @@ export function DataTable<TData, TValue>({
 					</Button>
 				</Link>
 			</div>
-			<div className="rounded-md border">
+			<div className="rounded-md border bg-card">
 				<Table>
 					<TableHeader>
 						{table.getHeaderGroups().map((headerGroup) => (
@@ -129,10 +129,12 @@ export function DataTable<TData, TValue>({
 					size="sm"
 					onClick={() => table.previousPage()}
 					disabled={!table.getCanPreviousPage()}
+					className="bg-card"
 				>
 					Previous
 				</Button>
 				<Button
+					className="bg-card"
 					variant="outline"
 					size="sm"
 					onClick={() => table.nextPage()}
