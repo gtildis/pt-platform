@@ -17,6 +17,10 @@ const config = withUt({
 			screens: {
 				"2xl": "1400px",
 			},
+			fontSize: {
+				"3xl": ["3rem"],
+				"5xl": ["5rem"],
+			},
 		},
 		extend: {
 			colors: {

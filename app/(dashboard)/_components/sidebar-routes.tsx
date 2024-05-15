@@ -1,19 +1,24 @@
 "use client";
 
-import { BarChart, Compass, Layout, List } from "lucide-react";
+import { BarChart, Compass, Layout, List, BookCheck } from "lucide-react";
 import { SidebarItem } from "./sidebar-item";
 import { usePathname } from "next/navigation";
 
 const guestRoutes = [
 	{
-		icon: Layout,
-		label: "Your dashboard",
+		icon: BookCheck,
+		label: "About",
 		href: "/",
 	},
 	{
 		icon: Compass,
 		label: "Browse courses",
 		href: "/search",
+	},
+	{
+		icon: Layout,
+		label: "Your dashboard",
+		href: "/dashboard",
 	},
 ];
 

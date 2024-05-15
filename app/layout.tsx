@@ -7,7 +7,14 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ToastProvider } from "@/components/providers/toast-provider";
 import { ConfettiProvider } from "@/components/providers/confetti-provider";
 
+import { Pirata_One } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+
+const pirata = Pirata_One({
+	subsets: ["latin"],
+	variable: "--font-pirata",
+	weight: "400",
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
