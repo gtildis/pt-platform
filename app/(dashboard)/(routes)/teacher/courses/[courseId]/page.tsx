@@ -4,6 +4,7 @@ import { db } from "@/lib/db";
 import { redirect } from "next/navigation";
 import { IconBadge } from "@/components/icon-badge";
 import {
+	ArrowLeft,
 	CircleDollarSign,
 	File,
 	LayoutDashboard,
@@ -18,6 +19,7 @@ import { AttachmentForm } from "./_components/attachment-form";
 import { ChaptersForm } from "./_components/chapters-form";
 import { Banner } from "@/components/banner";
 import { Actions } from "./_components/actions";
+import Link from "next/link";
 
 const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
 	const { userId } = auth();
@@ -79,6 +81,13 @@ const CourseIdPage = async ({ params }: { params: { courseId: string } }) => {
 					label="This course is not published. It will not be visible to the students"
 				/>
 			)}
+			<Link
+				href={`/teacher/courses/`}
+				className="flex px-4 pt-2 items-center text-sm hover:opacity-75 transition"
+			>
+				<ArrowLeft className="h-4 w-4 mr-2" />
+				Back to courses
+			</Link>
 			<div className="p-6 chapter-items-container">
 				<div className="flex items-center justify-between">
 					<div className="flex flex-col gap-y-2">

@@ -3,12 +3,23 @@
 import { Category } from "@prisma/client";
 
 import {
+	GiMuscularTorso,
+	GiBodyBalance,
+	GiWeightScale,
+	GiWeightLiftingUp,
+	GiBrokenHeartZone,
+	GiDiscobolus,
+} from "react-icons/gi";
+
+import {
+	FcBearish,
 	FcEngineering,
 	FcFilmReel,
 	FcMultipleDevices,
 	FcMusic,
 	FcOldTimeCamera,
 	FcSportsMode,
+	FcChargeBattery,
 } from "react-icons/fc";
 import { IconType } from "react-icons/lib";
 import { CategoryItem } from "./category-item";
@@ -18,12 +29,12 @@ interface CategoriesProps {
 }
 
 const iconMap: Record<Category["name"], IconType> = {
-	"Body weight exercises": FcMusic,
-	"Cardiovascular adjustments": FcFilmReel,
-	"Mobility conditioning": FcSportsMode,
-	"Muscle hypertrophy": FcMultipleDevices,
-	"Fat loss": FcOldTimeCamera,
-	Engineering: FcEngineering,
+	"Body weight exercises": GiBodyBalance,
+	"Cardiovascular adjustments": GiBrokenHeartZone,
+	"Mobility conditioning": GiDiscobolus,
+	"Muscle hypertrophy": GiMuscularTorso,
+	"Fat loss": GiWeightScale,
+	"Hiit workout": GiWeightLiftingUp,
 };
 
 const Categories = ({ items }: CategoriesProps) => {

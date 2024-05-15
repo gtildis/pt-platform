@@ -72,7 +72,7 @@ export const ImageForm = ({ initialData, courseId }: ImageFormProps) => {
 				</Button>
 			</div>
 			{!isEditing && !initialData.imageUrl ? (
-				<div className="flex items-center justify-center h-60 bg-slate-200 rounded-md">
+				<div className="flex items-center justify-center h-60 bg-background rounded-md">
 					<ImageIcon className="h-10 w-10 text-slate-500" />
 				</div>
 			) : (

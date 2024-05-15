@@ -76,7 +76,7 @@ export const ChaptersList = ({
 								{(provided) => (
 									<div
 										className={cn(
-											"flex items-center gap-x-2 bg-slate-200 border text-slate-100 rounded-md mb-4 text-sm chapters-list",
+											"flex items-center gap-x-2 bg-background border text-slate-100 rounded-md mb-4 text-sm chapters-list",
 											chapter.isPublished &&
 												"bg-background border chapters-list"
 										)}

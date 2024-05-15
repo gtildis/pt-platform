@@ -82,7 +82,7 @@ export const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
 	return (
 		<div className="relative mt-6 border bg-card rounded-md p-4 chapters-form-container">
 			{isUpdating && (
-				<div className="absolute h-full w-full bg-slate-500/20 top-0 right-0 rounded-m flex items-center justify-center">
+				<div className="absolute h-full w-full bg-background top-0 right-0 rounded-m flex items-center justify-center">
 					<Loader2 className="animate-spin h-6 w-6 text-primary"></Loader2>
 				</div>
 			)}

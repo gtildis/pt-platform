@@ -26,7 +26,7 @@ export const CourseCard = ({
 }: CourseCardProps) => {
 	return (
 		<Link href={`/courses/${id}`}>
-			<div className="group hover:shadow-sm transtion overflow-hidden border rounded-lg p-3 h-full bg-card text-card-foreground">
+			<div className="group hover:shadow-sm transtion overflow-hidden border rounded-lg p-3 h-full bg-card text-card-foreground course-card">
 				<div className="relative w-full aspect-video rounded-md overflow-hidden">
 					<Image fill className="object-cover" alt={title} src={imageUrl} />
 				</div>
@@ -35,26 +35,28 @@ export const CourseCard = ({
 						{title}
 					</div>
 					<p className="text-xs text-muted-foreground">{category}</p>
-					<div className="my-3 flex items-center gap-x-2 text-sm md:text-xs">
-						<div className="flex items-center gap-x-1 text-slate-300">
-							<IconBadge icon={BookOpen} />
-							<span>
-								{chaptersLength}
-								{chaptersLength === 1 ? " Chapter" : " Chapters"}
-							</span>
+					<div className="flex flex-col">
+						<div className="my-3 flex items-center gap-x-2 text-sm md:text-xs">
+							<div className="flex items-center gap-x-1 text-slate-300">
+								<IconBadge icon={BookOpen} />
+								<span>
+									{chaptersLength}
+									{chaptersLength === 1 ? " Chapter" : " Chapters"}
+								</span>
+							</div>
 						</div>
+						{progress !== null ? (
+							<CourseProgress
+								size="sm"
+								value={progress}
+								variant={progress === 100 ? "success" : "default"}
+							/>
+						) : (
+							<p className="text-md md:text-sm font-semibold">
+								{formatPrice(price)}
+							</p>
+						)}
 					</div>
-					{progress !== null ? (
-						<CourseProgress
-							size="sm"
-							value={progress}
-							variant={progress === 100 ? "success" : "default"}
-						/>
-					) : (
-						<p className="text-md md:text-sm font-semibold">
-							{formatPrice(price)}
-						</p>
-					)}
 				</div>
 			</div>
 		</Link>

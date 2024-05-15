@@ -69,7 +69,7 @@ export const ChapterVideoForm = ({
 				</Button>
 			</div>
 			{!isEditing && !initialData.videoUrl ? (
-				<div className="flex items-center justify-center h-60 bg-slate-200 rounded-md">
+				<div className="flex items-center justify-center h-60 bg-background rounded-md">
 					<VideoIcon className="h-10 w-10 text-slate-500" />
 				</div>
 			) : (

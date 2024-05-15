@@ -35,10 +35,10 @@ body,
 	.dark {
 		--background: 240 10% 3.9%;
 		--foreground: 0 0% 95%;
-		--card: 20 14.3% 5.1%;
-		--card-foreground: 60 9.1% 97.8%;
-		/* --card: 24 9.8% 10%;
-		--card-foreground: 0 0% 95%; */
+		/* --card: 20 14.3% 5.1%;
+		--card-foreground: 60 9.1% 97.8%; */
+		--card: 24 9.8% 10%;
+		--card-foreground: 0 0% 95%;
 		--popover: 0 0% 9%;
 		--popover-foreground: 0 0% 95%;
 		--primary: 20.5 90.2% 48.2%;
