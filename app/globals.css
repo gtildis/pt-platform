@@ -114,14 +114,15 @@ body,
   clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 .hero-container-image {
-  background-image: url("https://utfs.io/f/8e94f4e0-4c79-4e7a-80a4-77a9dc9e9add-1x98d9.PNG");
-  background-size: contain;
+  background-image: url("https://utfs.io/f/6567cadd-e753-4eb0-a776-448141be4338-fjoxpi.png");
+  background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
 }
 .services-image {
-  background-color: black;
-  background-size: cover;
+  background-image: url("https://utfs.io/f/06c3a748-c63f-4b80-bcd8-2a577de369f2-glm0ln.png");
+  z-index: 10;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -131,5 +132,9 @@ body,
 
 .background-dark-gray {
   background-color: #2e353c;
+}
+
+.thunder-icon--category-item {
+  transform: scale(50%);
 }
 @import "~@uploadthing/react/styles.css";

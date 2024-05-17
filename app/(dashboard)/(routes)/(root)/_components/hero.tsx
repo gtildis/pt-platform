@@ -30,8 +30,8 @@ const Hero = () => {
         </div>
         <p>Κάθε μέρα και ένα ακόμα Challenge.</p>
       </div>
-      <div className="flex flex-col justify-center items-center py-6 ">
-        <div className=" md:flex md:flex-row lg:flex-row items-center gap-10">
+      <div className="flex flex-col justify-center items-center py-6 mb-20">
+        <div className=" md:flex md:flex-row lg:flex-row items-center flex gap-10">
           <div>
             {/* <span>Τσεκαρε τα 👉</span> */}
             <Link href="/search">
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
           <div className="flex md:flex-row lg:flex-row text-center items-center">
             <Link href="https://calendly.com/pineapplegrego/30min">
-              <Button size="lggit" variant="default">
+              <Button size="lg" variant="default" className="">
                 Book
               </Button>
             </Link>
