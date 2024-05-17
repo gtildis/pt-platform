@@ -41,14 +41,14 @@ const Hero = () => {
             </Link>
           </div>
           <div>
-            <Link href="/search">
+            <Link href="https://calendly.com/pineapplegrego/30min">
               <Button size="lg" variant="default">
                 Book
               </Button>
             </Link>
             <div className="flex flex-col text-center">
               <span>☝️ Κλείσε ενα μάθημα </span>
-              <span className="text-xs">Ερχεται συντομα </span>
+              {/* <span className="text-xs">Ερχεται συντομα </span> */}
             </div>
           </div>
         </div>
