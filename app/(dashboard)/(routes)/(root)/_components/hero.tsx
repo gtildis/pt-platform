@@ -34,14 +34,14 @@ const Hero = () => {
         <div className="flex-col md:flex items-center gap-10">
           <div>
             <span>Τσεκαρε τα 👉</span>
-            <Link href="/Search">
+            <Link href="/search">
               <Button size="lg" variant="default">
                 Courses
               </Button>
             </Link>
           </div>
           <div>
-            <Link href="/Search">
+            <Link href="/search">
               <Button size="lg" variant="default">
                 Book
               </Button>
