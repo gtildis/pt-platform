@@ -24,7 +24,7 @@ const CategoriesLand = () => {
           <div className="text-center flex justify-center text-2xl">
             <h3 className="border-top border-bottom w-fit mt-4">EXPERTISE</h3>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center ml-16">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center md:ml-16 sm:ml-0">
             <CategoryItem label={categories.hiit.label} p={categories.hiit.p} />
             <CategoryItem
               label={categories.mobility.label}
