@@ -9,7 +9,7 @@ const Testimonials = () => {
           </div>
           <div className="text-center relative md:m-24 mt-24 m-6">
             <span className="quotes text-primary absolute left-1 -top-14 text-[100px]">
-              "
+              &quot;
             </span>
             <p className="text-md md:text-xl lg:2xl pt-4">
               Ο αχιλλεας με βοηθησε μεσα σε λιγους μηνες να πετυχω το στοχο που
@@ -20,7 +20,7 @@ const Testimonials = () => {
               αντιστοιχο μενταλιτι για να μην σταματησω να γυμναζομαι.
             </p>
             <span className="quotes absolute text-primary right-14  text-[100px]">
-              "
+              &quot;
             </span>
             <span className="">Γρηγόρης Τ.</span>
           </div>
