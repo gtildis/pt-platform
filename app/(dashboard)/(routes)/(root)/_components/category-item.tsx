@@ -7,7 +7,7 @@ interface CategoryItemProps {
 
 const CategoryItem = ({ label, p }: CategoryItemProps) => {
   return (
-    <div className="mt-20 flex flex-col items-center md:w-56">
+    <div className="mt-6 flex flex-col items-center md:w-56">
       <div className="thunder-icon--category-item">
         <Thunder />
       </div>
